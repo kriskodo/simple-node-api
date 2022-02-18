@@ -24,7 +24,6 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - run: npm start
   deploy: ## <-- this is the new stuff
     needs: build
     runs-on: ubuntu-latest
